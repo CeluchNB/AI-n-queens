@@ -13,7 +13,7 @@ public:
 
 	void setBoard(int** board);
 
-	bool solveNQueens();
+	bool solveNQueens(int y);
 
 	void printBoard();
 private:
