@@ -15,6 +15,10 @@ public:
 
 	bool solveNQueens(int y);
 
+	bool solveNQForwardChecking(int y);
+
+	bool forwardCheck(int sq);
+
 	void printBoard();
 private:
 	int n;

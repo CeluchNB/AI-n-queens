@@ -77,6 +77,7 @@ void Backtracking::setBoard(int** board) {
 bool Backtracking::solveNQueens(int y) {
 	
 	if (y == n) {
+		printBoard();
 		return true;
 	}
 
@@ -94,6 +95,54 @@ bool Backtracking::solveNQueens(int y) {
 	}
 
 	return false;
+}
+
+bool Backtracking::solveNQForwardChecking(int y) {
+
+	if (y == n) {
+		printBoard();
+		return true;
+	}
+
+	bool validBoard = true;
+	for (int i = 0; i < n; i++) {
+		if (isValidSpace(i, y)) {
+			board[i][y] = 1;
+
+			validBoard = forwardCheck(y + 1);
+
+			if (validBoard && solveNQForwardChecking(y + 1)) {
+				return true;
+			}
+			
+			board[i][y] = 0;
+		}
+	}
+
+	return false;
+}
+
+bool Backtracking::forwardCheck(int sq) {
+
+	if (sq >= n) {
+		return true;
+	}
+
+	bool hasSpace = false;
+	for (int i = sq; i < n; i++) {
+		hasSpace = false;
+		for (int j = 0; j < n; j++) {
+			if (isValidSpace(j, i)) {
+				hasSpace = true;
+				break;
+			}
+		}
+		if (!hasSpace) {
+			break;
+		}
+	}
+
+	return hasSpace;
 }
 
 void Backtracking::printBoard() {
