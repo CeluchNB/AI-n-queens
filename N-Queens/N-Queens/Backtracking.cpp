@@ -52,3 +52,15 @@ bool Backtracking::isValidSpace(int i, int j) {
 void Backtracking::setBoard(int** board) {
 	this->board = board;
 }
+
+void Backtracking::printBoard() {
+	std::cout << "{" << std::endl;;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			std::cout << board[i][j] << " ";
+		}
+
+		std::cout << std::endl;
+	}
+	std::cout << "}" << std::endl;
+}
