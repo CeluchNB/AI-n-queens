@@ -23,42 +23,50 @@ Backtracking::~Backtracking() {
 }
 
 bool Backtracking::isValidSpace(int i, int j) {
-	//bool isValid = true;
 
 	if (i >= n || j >= n) {
 		return false;
 	}
 
 	for (int x = 0; x < n; x++) {
-		for (int y = 0; y < n; y++) {
-			// check row
-			if (x == i && board[x][y] == 1) {
-				return false;
-			}
-
-			// check column
-			if (y == j && board[x][y] == 1) {
-				return false;
-			}
-
-			//if we are not on edge of board
-			if (y > 0 && x > 0) {
-				// check back left diagonal
-				if (board[x - 1][y - 1] == 1 && (y-j == x-i)) {
-					return false;
-				}
-			}
-
-			//if we are not on edge of board
-			if (x > 0 && y < n - 1) {
-				// check back right diagonal
-				if (board[x - 1][y + 1] == 1 && (x + y) == (i + j)) {
-					return false;
-				}
-			}
+		if (board[i][x] == 1) {
+			return false;
 		}
 	}
 
+	for (int x = 0; x < n; x++) {
+		if (board[x][j] == 1) {
+			return false;
+		}
+	}
+
+	int min1 = fmin(n - 1 - i, n - 1 - j);
+	int x1 = i + min1;
+	int y1 = j + min1;
+
+	int min2 = fmin(n - 1 - i, j);
+	int x2 = i + min2;
+	int y2 = j - min2;
+
+	for (x1; x1 >= 0; x1--) {
+		if (y1 < 0) {
+			break;
+		}
+		if (board[x1][y1] == 1) {
+			return false;
+		}
+		y1--;
+	}
+
+	for (x2; x2 >= 0; x2--) {
+		if (y2 >= n) {
+			break;
+		}
+		if (board[x2][y2] == 1) {
+			return false;
+		}
+		y2++;
+	}
 	return true;
 }
 
