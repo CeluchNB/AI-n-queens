@@ -104,21 +104,19 @@ bool Backtracking::solveNQForwardChecking(int y) {
 		return true;
 	}
 
-	bool validBoard = true;
 	for (int i = 0; i < n; i++) {
-		if (isValidSpace(i, y)) {
+		if (isValidSpace(i,y)) {
 			board[i][y] = 1;
 
-			validBoard = forwardCheck(y + 1);
-
-			if (validBoard && solveNQForwardChecking(y + 1)) {
+			
+			if (forwardCheck(y+1) && solveNQForwardChecking(y + 1)) {
 				return true;
 			}
-			
+
 			board[i][y] = 0;
 		}
 	}
-
+	
 	return false;
 }
 
