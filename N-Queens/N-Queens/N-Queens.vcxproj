@@ -148,11 +148,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Backtracking.h" />
-    <ClInclude Include="DepthFirstSearch.h" />
+    <ClInclude Include="BreadthFirstSearch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Backtracking.cpp" />
-    <ClCompile Include="DepthFirstSearch.cpp" />
+    <ClCompile Include="BreadthFirstSearch.cpp" />
     <ClCompile Include="N-Queens.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

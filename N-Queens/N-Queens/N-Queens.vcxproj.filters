@@ -18,7 +18,7 @@
     <ClInclude Include="Backtracking.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DepthFirstSearch.h">
+    <ClInclude Include="BreadthFirstSearch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClCompile Include="Backtracking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DepthFirstSearch.cpp">
+    <ClCompile Include="BreadthFirstSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
