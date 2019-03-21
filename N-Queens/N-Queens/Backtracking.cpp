@@ -94,22 +94,20 @@ bool Backtracking::solveNQForwardChecking(const int y) const{
 		printBoard();
 		return true;
 	}
-
 	auto validBoard = true;
 	for (auto i = 0; i < n; i++) {
 		if (isValidSpace(i, y)) {
 			board[i][y] = 1;
 
-			validBoard = forwardCheck(y + 1);
-
-			if (validBoard && solveNQForwardChecking(y + 1)) {
+			
+			if (forwardCheck(y+1) && solveNQForwardChecking(y + 1)) {
 				return true;
 			}
-			
+
 			board[i][y] = 0;
 		}
 	}
-
+	
 	return false;
 }
 
