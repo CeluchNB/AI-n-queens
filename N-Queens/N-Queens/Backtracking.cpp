@@ -1,54 +1,53 @@
-#include "stdafx.h"
 #include <iostream>
 #include "Backtracking.h"
 
-Backtracking::Backtracking(int n) : n(n) {
+Backtracking::Backtracking(const int n) : n(n) {
 	board = new int*[n];
-	for (int i = 0; i < n; i++) {
+	for (auto i = 0; i < n; i++) {
 		board[i] = new int[n];
 	}
 
-	for (int x = 0; x < n; x++) {
-		for (int y = 0; y < n; y++) {
+	for (auto x = 0; x < n; x++) {
+		for (auto y = 0; y < n; y++) {
 			board[x][y] = 0;
 		}
 	}
 }
 
 Backtracking::~Backtracking() {
-	for (int i = 0; i < n; i++) {
+	for (auto i = 0; i < n; i++) {
 		delete[] board[i];
 	}
 	delete[] board;
 }
 
-bool Backtracking::isValidSpace(int i, int j) {
+bool Backtracking::isValidSpace(const int i, const int j) const {
 
 	if (i >= n || j >= n) {
 		return false;
 	}
 
-	for (int x = 0; x < n; x++) {
+	for (auto x = 0; x < n; x++) {
 		if (board[i][x] == 1) {
 			return false;
 		}
 	}
 
-	for (int x = 0; x < n; x++) {
+	for (auto x = 0; x < n; x++) {
 		if (board[x][j] == 1) {
 			return false;
 		}
 	}
 
-	int min1 = fmin(n - 1 - i, n - 1 - j);
-	int x1 = i + min1;
-	int y1 = j + min1;
+	const auto min1 = static_cast<int>(fmin(n - 1 - i, n - 1 - j));
+	auto x1 = i + min1;
+	auto y1 = j + min1;
 
-	int min2 = fmin(n - 1 - i, j);
-	int x2 = i + min2;
-	int y2 = j - min2;
+	const auto min2 = static_cast<int>(fmin(n - 1 - i, j));
+	auto x2 = i + min2;
+	auto y2 = j - min2;
 
-	for (x1; x1 >= 0; x1--) {
+	for (; x1 >= 0; x1--) {
 		if (y1 < 0) {
 			break;
 		}
@@ -58,7 +57,7 @@ bool Backtracking::isValidSpace(int i, int j) {
 		y1--;
 	}
 
-	for (x2; x2 >= 0; x2--) {
+	for (; x2 >= 0; x2--) {
 		if (y2 >= n) {
 			break;
 		}
@@ -74,38 +73,30 @@ void Backtracking::setBoard(int** board) {
 	this->board = board;
 }
 
-bool Backtracking::solveNQueens(int y) {
-	
+bool Backtracking::solveNQueens(const int y) const {
 	if (y == n) {
 		printBoard();
 		return true;
 	}
-
-	for (int i = 0; i < n; i++) {
+	for (auto i = 0; i < n; i++) {
 		if (isValidSpace(i, y)) {
 			board[i][y] = 1;
-
-			if (solveNQueens(y + 1)) {
-				return true;
-			}
-			else {
-				board[i][y] = 0;
-			}
+			if (solveNQueens(y + 1)) return true;
+			board[i][y] = 0;
 		}
 	}
-
 	return false;
 }
 
-bool Backtracking::solveNQForwardChecking(int y) {
+bool Backtracking::solveNQForwardChecking(const int y) const{
 
 	if (y == n) {
 		printBoard();
 		return true;
 	}
 
-	bool validBoard = true;
-	for (int i = 0; i < n; i++) {
+	auto validBoard = true;
+	for (auto i = 0; i < n; i++) {
 		if (isValidSpace(i, y)) {
 			board[i][y] = 1;
 
@@ -122,16 +113,16 @@ bool Backtracking::solveNQForwardChecking(int y) {
 	return false;
 }
 
-bool Backtracking::forwardCheck(int sq) {
+bool Backtracking::forwardCheck(const int sq) const {
 
 	if (sq >= n) {
 		return true;
 	}
 
-	bool hasSpace = false;
-	for (int i = sq; i < n; i++) {
+	auto hasSpace = false;
+	for (auto i = sq; i < n; i++) {
 		hasSpace = false;
-		for (int j = 0; j < n; j++) {
+		for (auto j = 0; j < n; j++) {
 			if (isValidSpace(j, i)) {
 				hasSpace = true;
 				break;
@@ -145,10 +136,10 @@ bool Backtracking::forwardCheck(int sq) {
 	return hasSpace;
 }
 
-void Backtracking::printBoard() {
+void Backtracking::printBoard() const {
 	std::cout << "{" << std::endl;;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
+	for (auto i = 0; i < n; i++) {
+		for (auto j = 0; j < n; j++) {
 			std::cout << board[i][j] << " ";
 		}
 

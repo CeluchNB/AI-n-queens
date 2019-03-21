@@ -1,27 +1,26 @@
 #pragma once
 
-class Backtracking {
+class Backtracking final{
 
 public:
 
-	Backtracking(int n = 8);
+	explicit Backtracking(int n = 8);
 
 	~Backtracking();
 
 	// function to check if space is safe for Queen
-	bool isValidSpace(int i, int j);
+	bool isValidSpace(int i, int j) const;
 
 	void setBoard(int** board);
 
-	bool solveNQueens(int y);
+	bool solveNQueens(int y) const;
 
-	bool solveNQForwardChecking(int y);
+	bool solveNQForwardChecking(int y) const;
 
-	bool forwardCheck(int sq);
+	bool forwardCheck(int sq) const;
 
-	void printBoard();
+	void printBoard() const;
 private:
 	int n;
 	int** board;
-
 };
