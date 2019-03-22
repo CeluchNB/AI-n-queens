@@ -62,6 +62,7 @@ std::vector<State> State::getSuccessors() const {
 
 BreadthFirstSearch::BreadthFirstSearch(const int n) {
 	State::size = n;
+	solutionFound_ = false;
 	states_.emplace();
 }
 
