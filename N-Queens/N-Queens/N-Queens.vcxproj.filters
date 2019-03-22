@@ -15,24 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Backtracking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BreadthFirstSearch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="N-Queens.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Backtracking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BreadthFirstSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
