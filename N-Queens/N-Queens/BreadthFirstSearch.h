@@ -35,5 +35,6 @@ public:
 	void run();
 private:
 	std::queue<State> states_;
+	bool solutionFound_;
 };
 

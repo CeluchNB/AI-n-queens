@@ -70,6 +70,7 @@ void BreadthFirstSearch::step() {
 	auto current = nextState();
 	std::cout << current.toString() << std::endl;
 	if(current.isEndState()) {
+		solutionFound_ = true;
 		std::cout << "Solution found: " << current.toString() << std::endl;
 		return;
 	}
@@ -85,7 +86,7 @@ State BreadthFirstSearch::nextState() {
 }
 
 void BreadthFirstSearch::run() {
-	while(!states_.empty()) {
+	while (!states_.empty() && !solutionFound_) {
 		step();
 	}
 }
