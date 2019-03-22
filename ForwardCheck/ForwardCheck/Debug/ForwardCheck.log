@@ -1,0 +1,94 @@
+﻿  main.cpp
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(13): error C2065: 'Backtracking': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(13): error C2146: syntax error: missing ';' before identifier 'b'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(13): error C3861: 'b': identifier not found
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(14): error C2065: 'Backtracking': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(14): error C2146: syntax error: missing ';' before identifier 'b2'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(14): error C3861: 'b2': identifier not found
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(42): error C2065: 'b': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(43): error C2065: 'b': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\main.cpp(44): error C2065: 'b': undeclared identifier
+  ForwardCheck.cpp
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(7): error C2653: 'Backtracking': is not a class or namespace name
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(7): error C2550: 'Backtracking': constructor initializer lists are only allowed on constructor definitions
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(8): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(10): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(15): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(19): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(21): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(25): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(28): warning C4508: 'Backtracking': function should return a value; 'void' return type assumed
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(30): error C2523: 'Backtracking::~Backtracking': destructor tag mismatch
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(30): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(31): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(32): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(34): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(34): error C2541: 'delete': cannot delete objects that are not pointers
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(36): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(37): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(39): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(39): error C2541: 'delete': cannot delete objects that are not pointers
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(40): warning C4508: 'Backtracking': function should return a value; 'void' return type assumed
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(42): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(44): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(48): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(49): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(54): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(55): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(60): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(60): error C3861: 'fmin': identifier not found
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(64): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(64): error C3861: 'fmin': identifier not found
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(72): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(79): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(82): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(90): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(91): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(92): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(96): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(98): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(99): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(103): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(106): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(107): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(111): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(115): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(117): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(118): error C3861: 'printBoard': identifier not found
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(122): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(124): error C2065: 'domains': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(127): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(130): error C3861: 'forwardCheck': identifier not found
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(134): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(141): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(143): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(148): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(150): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(164): error C2510: 'Backtracking': left of '::' must be a class/struct/union
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(165): error C2039: 'cout': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(165): error C2065: 'cout': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(165): error C2039: 'endl': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(165): error C2065: 'endl': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(166): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(167): error C2065: 'n': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(168): error C2039: 'cout': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(168): error C2065: 'cout': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(168): error C2065: 'board': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(171): error C2039: 'cout': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(171): error C2065: 'cout': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(171): error C2039: 'endl': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(171): error C2065: 'endl': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(173): error C2039: 'cout': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(173): error C2065: 'cout': undeclared identifier
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(173): error C2039: 'endl': is not a member of 'std'
+  c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\predefined c++ types (compiler internal)(256): note: see declaration of 'std'
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\forwardcheck\forwardcheck\forwardcheck.cpp(173): error C2065: 'endl': undeclared identifier
+  Generating Code...
