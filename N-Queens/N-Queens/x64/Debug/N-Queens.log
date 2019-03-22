@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 ﻿  BreadthFirstSearch.cpp
   N-Queens.cpp
   Generating Code...
   N-Queens.vcxproj -> C:\Users\Sean\source\repos\ai-n-queens\N-Queens\x64\Debug\N-Queens.exe
+=======
+﻿  Backtracking.cpp
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\n-queens\n-queens\backtracking.cpp(43): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\smithdr1\onedrive - grove city college\desktop\ai\nqueens\n-queens\n-queens\backtracking.cpp(47): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  N-Queens.vcxproj -> C:\Users\smithdr1\OneDrive - Grove City College\Desktop\AI\NQueens\N-Queens\x64\Debug\N-Queens.exe
+>>>>>>> 0966a81be477ba60ee9ed3f6546bb4a977e3949c

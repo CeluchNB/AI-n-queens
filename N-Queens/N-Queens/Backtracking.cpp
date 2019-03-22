@@ -145,3 +145,128 @@ void Backtracking::printBoard() const {
 	}
 	std::cout << "}" << std::endl;
 }
+
+
+
+
+
+Backtracking2::Backtracking2(int n) : n(n) {
+	board = new int[n];
+	
+
+	for (int x = 0; x < n; x++) {
+		board[x] = 0;
+	}
+
+	domains = new int*[n];
+	for (int i = 0; i < n; i++) {
+		domains[i] = new int[n];
+	}
+	for (int x = 0; x < n; x++) {
+		for (int y = 0; y < n; y++) {
+			domains[x][y] = 0;
+		}
+	}
+}
+
+Backtracking2::~Backtracking2() {
+	delete[] board;
+
+	for (int i = 0; i < n; i++) {
+		delete[] domains[i];
+	}
+	delete[] domains;
+}
+
+void Backtracking2::setBoard(int* board, int** domains) {
+	this->board = board;
+	this->domains = domains;
+}
+
+
+
+
+
+
+void Backtracking2::printBoard() {
+	std::cout << "board{" << std::endl;;
+	for (int i = 0; i < n; i++) {
+		std::cout << board[i] << " ";
+
+		std::cout << std::endl;
+	}
+	std::cout << "}" << std::endl;
+
+	std::cout << "domain{" << std::endl;;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			std::cout << domains[i][j] << " ";
+		}
+
+		std::cout << std::endl;
+	}
+	std::cout << "}" << std::endl;
+}
+
+bool Backtracking2::solveNQForwardCheckingWithDomainChecking(int y) {
+
+	if (y == n) {
+		printBoard();
+		return true;
+	}
+
+	for (int i = 0; i < n; i++) {
+		if (domains[i][y] == 0) {
+			board[y] = i;
+			addThreats(i, y);
+			printBoard();
+
+			if (isQueenPlacementPossible(y)) {
+				solveNQForwardCheckingWithDomainChecking(y + 1);
+			}
+			removeThreats(i, y);
+		}
+	}
+
+	return false;
+}
+
+
+void Backtracking2::addThreats(int i, int j) {
+	updateDomains(1, i, j);
+}
+
+void Backtracking2::removeThreats(int i, int j) {
+	updateDomains(-1, i, j);
+}
+
+void Backtracking2::updateDomains(int valMod, int row, int col) {
+	for (int i = 1; i < n - col; i++) {
+		domains[row][col + i] += valMod;
+		if (row + i < n) {
+			domains[row + i][col + i] += valMod;
+			domains[row + i][col] += valMod;
+
+		}
+		if (row - i >= 0) {
+			domains[row - i][col + i] += valMod;
+		}
+	}
+	domains[row][col] += 1;
+	printBoard();
+}
+
+bool Backtracking2::isQueenPlacementPossible(int col) {
+	for (int i = col + 1; i < n; i++) {
+		bool canPlace = false;
+		for (int row = 0; row < n && !canPlace; row++) {
+			if (domains[row][i] == 0) {
+				canPlace = true;
+			}
+		}
+		if (!canPlace) {
+			return false;
+		}
+	}
+	return true;
+}
