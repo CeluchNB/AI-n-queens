@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v142:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0
-Debug|x64|C:\Users\Sean\source\repos\ai-n-queens\N-Queens\|
-=======
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.17763.0
-Debug|x64|C:\Users\smithdr1\OneDrive - Grove City College\Desktop\AI\NQueens\N-Queens\|
->>>>>>> 0966a81be477ba60ee9ed3f6546bb4a977e3949c
+Debug|x64|C:\Users\Sean\source\repos\ai-n-queens\N-Queens\|

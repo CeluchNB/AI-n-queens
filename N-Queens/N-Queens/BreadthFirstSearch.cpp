@@ -69,7 +69,6 @@ BreadthFirstSearch::BreadthFirstSearch(const int n) {
 void BreadthFirstSearch::step() {
 	if (states_.empty()) return;
 	auto current = nextState();
-	std::cout << current.toString() << std::endl;
 	if(current.isEndState()) {
 		solutionFound_ = true;
 		std::cout << "Solution found: " << current.toString() << std::endl;
