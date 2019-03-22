@@ -256,7 +256,7 @@ void Backtracking2::updateDomains(int valMod, int row, int col) {
 	printBoard();
 }
 
-bool Backtracking2::isQueenPlacementPossible(int col) {
+bool Backtracking2::isQueenPlacementPossible(int col) const {
 	for (int i = col + 1; i < n; i++) {
 		bool canPlace = false;
 		for (int row = 0; row < n && !canPlace; row++) {

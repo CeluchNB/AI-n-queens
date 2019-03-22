@@ -20,7 +20,7 @@ public:
 
 	void updateDomains(int valMod, int row, int col);
 
-	bool isQueenPlacementPossible(int col);
+	bool isQueenPlacementPossible(int col) const;
 private:
 	int n;
 	int* board;

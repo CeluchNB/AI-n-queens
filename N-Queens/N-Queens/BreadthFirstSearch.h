@@ -21,6 +21,7 @@ struct State {
 
 	static State fromString(const std::string&);
 	std::string toString() const;
+	std::string toBoard() const;
 
 	bool isValidState() const;
 	bool isEndState() const;

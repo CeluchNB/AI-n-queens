@@ -30,6 +30,24 @@ std::string State::toString() const {
 	return ret.substr(0, ret.length() - 1);
 }
 
+std::string State::toBoard() const {
+	std::stringstream ss(toString());
+	std::string token;
+	std::stringstream bs;
+	while(std::getline(ss, token, ',')) {
+		auto i = 0U;
+		for (; i < static_cast<unsigned>(atoi(token.c_str())); ++i) {
+			bs << "0 ";
+		}
+		bs << "1 ";
+		for(; i < size; ++i) {
+			bs << "0 ";
+		}
+		bs << "\n";
+	}
+	return bs.str();
+}
+
 bool State::isValidState() const {
 	for(auto i = 0U; i < queens.size(); ++i)
 		for(auto j = i + 1; j < queens.size(); ++j)
@@ -71,7 +89,7 @@ void BreadthFirstSearch::step() {
 	auto current = nextState();
 	if(current.isEndState()) {
 		solutionFound_ = true;
-		std::cout << "Solution found: " << current.toString() << std::endl;
+		std::cout << "Solution found:\n" << current.toBoard() << std::endl;
 		return;
 	}
 	for(auto state : current.getSuccessors()) {
